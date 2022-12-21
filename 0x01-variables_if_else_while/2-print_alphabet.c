@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Prints the alphabet in lowercase.
+ * main - Entry point
  * Return: Always 0.
  */
 int main(void)
@@ -8,6 +8,6 @@ int main(void)
 char b;
 for (b = 'a'; b <= 'z'; b++)
 putchar(b);
-
+putchar('\n');
 return (0);
 }
