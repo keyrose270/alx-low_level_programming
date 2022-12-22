@@ -15,7 +15,7 @@ putchar(a + '0');
 putchar(' ');
 putchar(b + '0');
 putchar(b + '0');
-if (num1 == 98 && num2 == 99)
+if (a == 98 && b == 99)
 continue;
 putchar(',');
 putchar(' ');
