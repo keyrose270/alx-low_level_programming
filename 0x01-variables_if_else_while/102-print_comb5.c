@@ -5,21 +5,20 @@
  */
 int main(void)
 {
-int a, b, c;
-for (a = 0; a !=  8; a++)
+int a, b;
+for (a = 0; a <= 98; a++)
 {
-for (b = b + 1; b < 9; b++)
-{
-for (a = b + 1; c < 10; c++)
+for (b = a + 1; b <= 99; b++)
 {
 putchar(a + '0');
+putchar(a + '0');
+putchar(' ');
 putchar(b + '0');
-putchar(c + '0');
-if (a == 7 && b == 8 && c == 9)
+putchar(b + '0');
+if (num1 == 98 && num2 == 99)
 continue;
 putchar(',');
 putchar(' ');
-}
 }
 }
 putchar('\n');
