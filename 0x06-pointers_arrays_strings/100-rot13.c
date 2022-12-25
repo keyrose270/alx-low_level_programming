@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
 * rot13 -  encodes a string using rot13
 * @str:the string targeted
@@ -7,7 +6,7 @@
 */
 char *rot13(char *str)
 {
-int index1, index2;
+int in1, in2;
 char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F',
 'G', 'H', 'I', 'J', 'K', 'L',
 'M', 'N', 'O', 'P', 'Q', 'R',
@@ -26,13 +25,13 @@ char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S',
 'x', 'y', 'z', 'a', 'b', 'c',
 'd', 'e', 'f', 'g', 'h', 'i',
 'j', 'k', 'l', 'm'};
-while (str[++index1])
+while (str[++in1])
 {
-for (index2 = 0; index2 < 52; index2++)
+for (in2 = 0; in2 < 52; in2++)
 {
-if (str[index1] == alphabet[index2])
+if (str[in1] == alphabet[in2])
 {
-str[index1] = rot13key[index2];
+str[in1] = rot13key[in2];
 break;
 }
 }
