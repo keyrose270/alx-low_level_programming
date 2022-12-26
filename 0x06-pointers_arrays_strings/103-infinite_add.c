@@ -41,5 +41,5 @@ return (0);
 r[num] = '\0';
 for (a = 0, b= --num; a < num / 2; a++, b--)
 temp = r[a], r[a] = r[b], r[b] = temp;
-return (r);
+return (0);
 }
