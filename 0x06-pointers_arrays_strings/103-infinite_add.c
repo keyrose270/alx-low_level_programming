@@ -11,20 +11,20 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 int le1 = 0, num1 = 0, sum1 = 0;
 int le2 = 0, num2 = 0, sum2 = 0;
-int num = 0, sum = 0, i, j;
+int num = 0, sum = 0, b, a;
 char temp, n1c[1000], n2c[1000];
 while (n1[le1] != '\0')
-len1++;
+le1++;
 while (n2[le2] != '\0')
 le2++;
 if (le1 >= size_r || le2 >= size_r)
 return (0);
-for (j = 0, i = le1 - 1; j < le1; j++, i--)
-n1c[j] = n1[i];
-n1c[j] = '\0';
-for (j = 0, i = le2 - 1; j < le2; j++, i--)
-n2c[j] = n2[i];
-n2c[j] = '\0';
+for (a = 0, b = le1 - 1; a < le1; a++, b--)
+n1c[a] = n1[b];
+n1c[a] = '\0';
+for (a = 0, b = le2 - 1; a < le2; a++, b--)
+n2c[a] = n2[b];
+n2c[a] = '\0';
 while (num < size_r - 1)
 {
 if (num1 >= le1 && num2 >= le2 && sum == 0)
