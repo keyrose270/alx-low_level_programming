@@ -8,7 +8,7 @@ int main(void)
 {
 int i = 0;
 unsigned long a, b, c;
-a = 1, b = 2;
+a = 0, b = 1;
 while (i < 50)
 {
 printf("%lu", a);
