@@ -5,20 +5,24 @@
  */
 int main(void)
 {
-int a, b, c;
-for (a = 0; a !=  8; a++)
+int n, m, l;
+for (n = 48; n < 58; n++)
 {
-for (b = b + 1; b < 9; b++)
+for (m = 49; m < 58; m++)
 {
-for (a = b + 1; c < 10; c++)
+for (l = 50; l < 58; l++)
 {
-putchar(a + '0');
-putchar(b + '0');
-putchar(c + '0');
-if (a == 7 && b == 8 && c == 9)
-continue;
+if (l > m && m > n)
+{
+putchar(n);
+putchar(m);
+putchar(l);
+if (n != 55 || m != 56)
+{
 putchar(',');
 putchar(' ');
+}
+}
 }
 }
 }
