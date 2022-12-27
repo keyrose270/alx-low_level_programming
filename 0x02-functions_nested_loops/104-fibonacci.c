@@ -8,7 +8,7 @@
 int main(void)
 {
 int i;
-unsigned long u1 = 0, u2 = 1, u3;
+unsigned long u1 = 1, u2 = 2, u3;
 unsigned long u1_n1, u1_n2, u2_n1, u2_n2;
 unsigned long n1, n2;
 for (i = 0; i < 92; i++)
