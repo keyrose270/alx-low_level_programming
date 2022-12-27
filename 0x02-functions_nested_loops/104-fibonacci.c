@@ -1,43 +1,34 @@
 #include <stdio.h>
 /**
- * main - main bloc
- * print_fib - prints the first 50 Fibonacci numbers,
- * starting with 1 and 2, followed by a new line
- * Return: Sucess tasks 16
+ * main - finds and prints the first 98 Fibonacci numbers,
+ * starting with 1 and 2
+ * followed by a new line
+ * Return: ALways 0 (Success)
  */
 int main(void)
 {
-int i;
-unsigned long u1 = 1, u2 = 2, u3;
-unsigned long u1_n1, u1_n2, u2_n1, u2_n2;
-unsigned long n1, n2;
-for (i = 0; i < 92; i++)
+unsigned long int a, b, c, b1, b2, C1, C2;
+b = 1;
+c = 2;
+printf("%lu", b);
+for (a = 1; a < 91; a++)
 {
-u3 = u1 + u2;
-printf("%lu, ", u3);
-u1 = u2;
-u2 = u3;
+printf(", %lu", c);
+c = c + b;
+b = c - b;
 }
-u1_n1 = u1 / 10000000000;
-u2_n1 = u2 / 10000000000;
-u1_n2 = u1 % 10000000000;
-u2_n2 = u2 % 10000000000;
-for (i = 93; i < 99; i++)
+b1 = b / 1000000000;
+b2 = b % 1000000000;
+c1 = c / 1000000000;
+c2 = c % 1000000000;
+for (a = 92; a < 99; ++a)
 {
-n1 = u1_n1 + u2_n1;
-u2 = u1_n2 + u2_n2;
-if ((u1_n2 + u2_n2) > 9999999999)
-{
-n1 += 1;
-n2 %= 10000000000;
-}
-printf("%lu%lu", n1, n2);
-if (inc != 98)
-printf(", ");
-u1_n1 = u2_n1;
-u1_n2 = u2_n2;
-u2_n1 = n1;
-u2_n2 = n2;
+printf(", %lu", c1 + (c2 / 1000000000));
+printf("%lu", c2 % 1000000000);
+c1 = c1 + b1;
+b1 = c1 - b1;
+c2 = c2 + b2;
+b2 = c2 - b2;
 }
 printf("\n");
 return (0);
