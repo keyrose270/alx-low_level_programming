@@ -6,20 +6,20 @@
  */
 int main(void)
 {
-int t = 0;
+int i = 0;
 unsigned long a, b, c;
 a = 1, b = 2;
-while (t < 50)
+while (i < 50)
 {
 printf("%lu", a);
-if (t < 49)
+if (i < 49)
 {
 printf(", ");
 }
 c = b;
 c = a + b;
 a = c;
-t++;
+i++;
 }
 putchar('\n');
 return (0);
