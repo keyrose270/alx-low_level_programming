@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - add multiples of 3 & 5 below 1024
  * Return: Sucess tasks 13 Always 0.
