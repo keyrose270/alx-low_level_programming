@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts - writes a string to stdout up to but not including the null character.
+ * _puts - writes a string to stdout up.
  * @str: the value stdout.
  */
 void _puts(char *str)
