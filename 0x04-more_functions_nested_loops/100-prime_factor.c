@@ -5,18 +5,22 @@
  */
 int main(void)
 {
-unsigned long int numba = 612852475143;
-unsigned long int prima;
-prima = 3;
-while (prima < numba / 2)
+long prime = 612852475143, divv;
+while (divv < (prime / 2))
 {
-if ((numba % prima) == 0)
+if ((prime % 2) == 0)
 {
-if ((prima % 3) == 2)
-printf(",%lu ", prima);
+prime /= 2;
+continue;
 }
-prima += 2;
+for (divv = 3; divv < (prime / 2); divv += 2)
+{
+if ((prime % divv) == 0)
+{
+prime /= divv;
 }
-putchar('\n');
+}
+}
+printf("%ld\n", prime);
 return (0);
 }
