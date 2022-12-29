@@ -3,8 +3,8 @@
  * print_rev - A function that prints a string.
  * followed by a new line
  * descritpion: key is letter
- * @s: String pointer 
- * Return: string 
+ * @s: String pointer
+ * Return: string
  */
 void print_rev(char *s)
 {
