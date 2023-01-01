@@ -1,22 +1,28 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
-int a, b;
-for (a = 0; a <= 98; a++)
+int k, s;
+for (k = 0; k <= 98; k++)
 {
-for (b = a + 1; b <= 99; b++)
+for (s = k + 1; s <= 99; s++)
 {
-putchar(a + '0');
-putchar(a + '0');
+putchar((k / 10) + '0');
+putchar((k % 10) + '0');
 putchar(' ');
-putchar(b + '0');
-putchar(b + '0');
-if (a == 98 && b == 99)
+putchar((s / 10) + '0');
+putchar((s % 10) + '0');
+if (k == 9 && s == 9)
+{
 continue;
+}
+else if (k == 98 && s == 99)
+{
+continue;
+}
 putchar(',');
 putchar(' ');
 }
