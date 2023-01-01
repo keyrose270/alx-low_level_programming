@@ -1,42 +1,42 @@
 #include <stdio.h>
 /**
 *main - prints out first 98
-*fibonacci suit numbers
-*Return: return 0
+*fibonacci 
+*Return: return 0 Success tasks 16
 */
 int main(void)
 {
 int inc;
-unsigned long n1 = 0, n2 = 1, n3;
-unsigned long n1_h1, n1_h2, n2_h1, n2_h2;
-unsigned long h1, h2;
-for (inc = 0; inc < 92; inc++)
+unsigned long a1 = 0, a2 = 1, a3;
+unsigned long a1b1, a1b2, a2b1, a2b2;
+unsigned long b1, b2;
+for (i = 0; i < 92; i++)
 {
-n3 = n1 + n2;
-printf("%lu, ", n3);
-n1 = n2;
-n2 = n3;
+a3 = a1 + a2;
+printf("%lu, ", a3);
+a1 = a2;
+a2 = a3;
 }
-n1_h1 = n1 / 10000000000;
-n2_h1 = n2 / 10000000000;
-n1_h2 = n1 % 10000000000;
-n2_h2 = n2 % 10000000000;
-for (inc = 93; inc < 99; inc++)
+a1b1 = a1 / 10000000000;
+a2b1 = a2 / 10000000000;
+a1b2 = a1 % 10000000000;
+a2b2 = a2 % 10000000000;
+for (i = 93; i < 99; i++)
 {
-h1 = n1_h1 + n2_h1;
-h2 = n1_h2 + n2_h2;
-if ((n1_h2 + n2_h2) > 9999999999)
+b1 = a1b1 + a2b1;
+b2 = a1b2 + a2b2;
+if ((a1b2 + a2b2) > 9999999999)
 {
-h1 += 1;
-h2 %= 10000000000;
+b1 += 1;
+b2 %= 10000000000;
 }
-printf("%lu%lu", h1, h2);
-if (inc != 98)
+printf("%lu%lu", b1, b2);
+if (i != 98)
 printf(", ");
-n1_h1 = n2_h1;
-n1_h2 = n2_h2;
-n2_h1 = h1;
-n2_h2 = h2;
+a1b1 = a2b1;
+a1b2 = a2b2;
+a2b1 = a1;
+a2b2 = a2;
 }
 printf("\n");
 return (0);
