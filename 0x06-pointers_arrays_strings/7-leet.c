@@ -1,28 +1,22 @@
 #include "main.h"
 /**
  * leet - breaking out the leet speak.
- * @s: string into 1337
+ * @str: string into 1337
  * Return: Success tasks 7
  */
-char *leet(char *s)
+char *leet(char *str)
+
 {
-char l[10][2] = {
-{'a', '0' + 4}, {'A', '0' + 4},
-{'e', '0' + 3}, {'E', '0' + 3},
-{'o', '0'}, {'O', '0'},
-{'t', '0' + 7}, {'T', '0' + 7},
-{'l', '0' + 1}, {'L', '0' + 1}};
-int t = 0;
-int b = 0;
-while (s[t] != '\0')
+int i1 = 0, i2;
+char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+while (str[++i1])
 {
-while (l[b][0] != '\0')
+for (i2 = 0; i2 <= 7; i2++)
 {
-s[t] = l[b][1];
-b++;
+if (str[i1] == leet[i2] ||
+str[i1] - 32 == leet[i2])
+str[i1] = i2 + '0';
 }
-b = 0;
-t++;
 }
-return (0);
+return (str);
 }
