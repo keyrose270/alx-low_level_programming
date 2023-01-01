@@ -1,21 +1,21 @@
 #include <stdio.h>
 /**
  * main - Printing combinations of two two-digit numbers
- * Return: Always 0.
+ * Return: Always 0 tasks 12.
  */
 int main(void)
 {
-int nb1, nb2;
-for (nb1 = 0; nb1 <= 98; nb1++)
+int a, b;
+for (a = 0; a <= 98; a++)
 {
-for (nb2 = nb1 + 1; nb2 <= 99; nb2++)
+for (b = a + 1; b <= 99; b++)
 {
-putchar((nb1 / 10) + '0');
-putchar((nb1 % 10) + '0');
+putchar((a / 10) + '0');
+putchar((a % 10) + '0');
 putchar(' ');
-putchar((nb2 / 10) + '0');
-putchar((nb2 % 10) + '0');
-if (nb1 == 98 && nb2 == 99)
+putchar((b / 10) + '0');
+putchar((b % 10) + '0');
+if (a == 98 && b == 99)
 break;
 putchar(',');
 putchar(' ');
