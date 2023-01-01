@@ -2,22 +2,22 @@
 /**
  * *cap_string - function
  * @str: Pointer
- * Return: poniter return to function.
+ * Return: Success tasks 6.
  */
 char *cap_string(char *str)
 {
-int symb[14] = {' ', '\t', '\n', ',', ';', '.', '!',
+int S[14] = {' ', '\t', '\n', ',', ';', '.', '!',
 '?', '"', '(', ')', '{', '}'};
-int i, j;
-for (i = 0; str[i] != '\0'; i++)
+int a, b;
+for (a = 0; str[a] != '\0'; a++)
 {
 if (str[0] >= 97 && str[0] <= 122)
 {
 str[0] = str[0] - 32;
 }
-for (j = 0; j < 14; j++)
-if (str[i] >= 97 && str[i] <= 122 && str[i - 1] == symb[j])
-str[i] = str[i] - 32;
+for (b = 0; b < 14; b++)
+if (str[a] >= 97 && str[a] <= 122 && str[a - 1] == S[b])
+str[a] = str[a] - 32;
 }
 return (str);
 }
