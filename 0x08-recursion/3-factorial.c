@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * factorial - returns the factorial 
+ * factorial - returns the factorial
  * @n: integer
  * Return: On success tasks 3.
  * returned -1 error.
