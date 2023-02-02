@@ -14,7 +14,7 @@ if (argc != 3)
 printf("Error\n");
 return (1);
 }
-for (b = 1; a < argc; a++)
+for (a = 1; a < argc; a++)
 b *= atoi(argv[a]);
 printf("%d\n", b);
 return (0);
