@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * create_array
+ * create_array-create an array
  * @size: size of the array
  * @c:value
  * Return: NULL
